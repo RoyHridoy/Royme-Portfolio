@@ -57,10 +57,6 @@
     ************************* -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <!-- user custom css
-    ************************* -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-
     <!-- modernizr-2 js
     ************************* -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>

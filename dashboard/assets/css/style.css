@@ -179,6 +179,7 @@ input[type="submit"] {
 .logo {
     position: relative;
 }
+
 .logo:before {
     position: absolute;
     background-color: #0a3d62;
@@ -318,6 +319,7 @@ input[type="submit"] {
     padding-top: 0px;
     margin-top: 0px;
 }
+
 .sidemenu-area .show .dropdown-toggle::after {
     transform: rotate(0deg);
 }
@@ -365,6 +367,7 @@ input[type="submit"] {
     top: 12px;
     left: -2px;
 }
+
 .sidemenu-area ul li a.dropdown-item {
     padding-left: 15px;
 }
