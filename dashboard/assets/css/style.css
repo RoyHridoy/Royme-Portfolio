@@ -56,19 +56,23 @@ ul {
 }
 
 .section-heading {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
-.section-heading h2 {
-    letter-spacing: 3px;
-    text-transform: uppercase;
+.section-heading h5 {
+    letter-spacing: 0;
+    text-transform: capitalize;
+    border-bottom: 1px dashed;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.section-heading h2 span {
+.section-heading h5 span {
     background-color: #454545;
     color: #fff;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 1px 10px;
 }
 
 .section-heading-small {
@@ -80,72 +84,13 @@ ul {
     text-transform: uppercase;
 }
 
-.bordered-btn,
-.filled-btn,
-button[type="submit"],
-input[type="submit"] {
-    border: 1px solid #222;
-    color: #222;
-    display: inline-block;
-    letter-spacing: 3px;
-    padding: 10px 20px;
-    position: relative;
-    text-transform: uppercase;
-    z-index: 1;
-}
-
-.bordered-btn:hover,
-.filled-btn,
-button[type="submit"]:hover,
-input[type="submit"]:hover {
-    color: #fff;
-}
-
-.bordered-btn:after,
-.filled-btn:after,
-button[type="submit"]:after,
-input[type="submit"]:after {
-    background-color: #454545;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 0 0;
-    transform-origin: 0 0 0;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    width: 100%;
-    z-index: -1;
-}
-
-.bordered-btn:hover:after,
-.filled-btn:after,
-button[type="submit"]:hover:after,
-input[type="submit"]:hover:after {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.filled-btn:hover:after {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-}
-
-.filled-btn:hover {
-    color: #222;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="password"],
+input[type="number"],
 textarea {
-    border: 1px solid #ddd;
     font-family: "Playfair Display", serif;
-    height: 50px;
     letter-spacing: 1px;
     padding: 10px 15px;
     text-transform: capitalize;
@@ -159,21 +104,39 @@ textarea {
     height: 130px;
     resize: none;
 }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="password"]:focus,
-textarea:focus {
-    border-color: #ddd;
-    box-shadow: 0 0 8px #ddd;
+label{
+    font-weight: 500;
+}
+.custom-select {
+    padding: 0;
+}
+.custom-select[multiple], .custom-select[size]:not([size="1"]) {
+    padding-right: 0;
+}
+.custom-select option {
+    text-transform: capitalize;
+    padding: 7px 10px;
+    border-bottom: 1px solid #ced4da;
+}
+.custom-select option:last-child {
+    /*border: none;*/
+}
+.form-control:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 2px rgba(23, 162, 184, 0.5);
 }
 
-button[type="submit"],
-input[type="submit"] {
-    background-color: transparent;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+.mt-30 {
+    margin-top: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.content-box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -377,5 +340,59 @@ input[type="submit"] {
     background-color: #f6f7fb;
     min-height: 100vh;
     margin-left: 280px;
-    padding-top: 67px;
+    padding: 110px 20px 0;
+}
+
+.single-item {
+    border: 1px solid #ced4da;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+ul.list-item {
+    border: 1px solid #ced4da;
+}
+ul.list-item li {
+    border-bottom: 1px solid #ced4da;
+    padding: 7px 15px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+ul.list-item li:last-child {
+    border: none;
+}
+
+.list-item li p {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.list-item li p.title {
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+ul.list-item.box {
+    border: none;
+}
+ul.list-item.box li {
+    border: 1px solid #ced4da;
+    margin-bottom: 20px;
+}
+ul.list-item.box li:last-child {
+    margin-bottom: 0;
+}
+.custom-file-input {
+    opacity: 1;
+}
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "Choose file";
+}
+.action {
+    border-top: 1px solid #ced4da;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.separator {
+    display: block;
+    border-bottom: 1px solid #ced4da;
+    margin: 30px 0 25px;
 }
